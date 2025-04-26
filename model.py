@@ -4,6 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import SVC, LinearSVC
+import joblib
 
 
 
@@ -40,5 +41,7 @@ y_test_labels = [label_mapping[true] for true in y_test]
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy * 100:.2f}%")
 print(classification_report(y_test_labels, y_pred_labels))
+joblib.dump(model, 'linear_svm_model.pkl')
+joblib.dump(vectorizer, 'tfidf_vectorizer.pkl')
 
 
