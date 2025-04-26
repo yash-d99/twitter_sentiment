@@ -21,9 +21,9 @@ In order to get the reddit keys and connect them -
 4) Create the app
 5) Copy the client ID (which is shown under the app name) and copy the client secret
 6) Create a .env file in your cloned repository that looks like this (replace the placeholders with your info from above):
-REDDIT_CLIENT_ID= your_client_id
-REDDIT_CLIENT_SECRET= your_client_secret
-REDDIT_USER_AGENT=project_name
+  REDDIT_CLIENT_ID= your_client_id 
+  REDDIT_CLIENT_SECRET= your_client_secret 
+  REDDIT_USER_AGENT=project_name
 
 ## Running the App
 Once all the steps above have been complete, run 
